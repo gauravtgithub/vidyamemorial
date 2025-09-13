@@ -1,1 +1,57 @@
-<html><html><head><title>My Site</title></head><body><h1>Hello World!</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VMPS School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Vidya Memorial Public School</h1>
+    
+    <!-- Hamburger Menu Button -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+    <nav id="navbar">
+      <ul>
+        <li><a href="#" onclick="showTab('home')">Home</a></li>
+        <li><a href="#" onclick="showTab('about')">About Us</a></li>
+        <li><a href="#" onclick="showTab('contact')">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="tab-content active">
+      <h2>Welcome to VMPS</h2>
+      <p>VMPS is committed to excellence in education and holistic student development.</p>
+    </section>
+
+    <section id="about" class="tab-content">
+      <h2>About Us</h2>
+      <p>At VMPS, we nurture curiosity, creativity, and character. Our dedicated faculty provides world-class education with a focus on academics, sports, and arts.</p>
+    </section>
+
+    <section id="gallery" class="tab-content">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1654018590184-13b2ed8dcd2e?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Empty Indian classroom">
+      </div>
+    </section>
+
+    <section id="contact" class="tab-content">
+      <h2>Contact Us</h2>
+      <p>Email: vidyamemorial@gmail.com</p>
+      <p>Phone: 011-25373069</p>
+      <p>Address: G-1/450, Dal Mill Road, Uttam Nagar, New Delhi - 110059</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VMPS School. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
